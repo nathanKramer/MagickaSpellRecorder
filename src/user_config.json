@@ -1,0 +1,55 @@
+{
+    // This can be either "image", "text", or "off"
+    "magickDisplayType": "image", 
+    
+    // If magick display type is text, define text properties here
+    "magickText_size": 15,
+    "magickText_color": "#FFFFFF",
+    "magickText_font": "Monospaced", // This list is probably ok as a guide http://alvinalexander.com/blog/post/jfc-swing/swing-faq-list-fonts-current-platform
+    "magickText_bold": true,
+    "magickText_italics": false,
+    
+    // Window dimensions
+    "width": 400,
+    "height": 512,
+    
+    // Start position for the app window. If you have a dual monitor set up you can use a negative x value to put it on the other screen.
+    "startPositionX": 100,
+    "startPositionY": 100,
+
+    // Number of spells to display in history, excluding uncommited spell. You may need to raise the window height.
+    "numberOfSpells": 6,
+
+    // If true, the classic icons will be used. Otherwise, uses a second lot of icons which you can customize to your heart's content
+    "classicIcons": true,
+
+    // If true, blank elements will be shown in spell history
+    "blankElementIcons": true, 
+    
+    // If blank element icons are not being shown, should the spells be aligned to the left or to the right?
+    "spellAlignment" : "left",
+
+    // Amount to scale element icons, default 1.0
+    // Note that this value will also be applied to the self cast icon
+    "elementIconScale": 1.0,
+
+    // Amount to scale magick icons. A good starting range is between 0.55 and 1.0
+    "magickIconScale": 0.9,
+
+    // Element spacing. A good value for the classic icons is 50, a good value for the default custom icons is 35
+    "elementSpacing": 50,
+
+	// This is used to allocate a certain number of spell rows to displaying magicks. Eg: 2 will use up two of "numberOfSpells", and will take up the same amount of space as two spells
+	"numberOfRowsForMagick": 2,
+
+    // If true, shoves spells out of the way to give the magick a bit more room. If false, numberOfRowsForMagick is used to decide formatting
+    "autoFitMagicks": false,
+
+    // Background color as hex string, default #003F39
+    "backgroundColor": "#003F39",
+    
+    // If true, the window is undecorated and transparent, and is created at the position start position
+    // Doesn't work well with OBS, as the window capture will not work anymore. Works well with shadowplay or if you are recording everything on your screen rather than using window / game captures
+    "ingameMode": false
+
+}
